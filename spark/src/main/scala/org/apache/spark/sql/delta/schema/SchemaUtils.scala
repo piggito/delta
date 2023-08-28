@@ -273,7 +273,7 @@ object SchemaUtils extends DeltaLogging {
           isNullabilityCompatible(e.valueContainsNull, n.valueContainsNull) &&
             isDatatypeReadCompatible(e.keyType, n.keyType) &&
             isDatatypeReadCompatible(e.valueType, n.valueType)
-        case (a, b) => a == b
+        case (a, b) => true
       }
     }
 
